@@ -16,10 +16,10 @@
 <body>
 
 <div id="unity-container" class="unity-desktop">
+  <a-scene embedded arjs></a-scene>
 
 <!--  &lt;!&ndash; Канвас для отображения WebGL контента &ndash;&gt;-->
-  <canvas id="unity-canvas" width="960" height="600" tabindex="-1">
-    <a-scene embedded arjs></a-scene>
+  <canvas id="unity-canvas" tabindex="-1">
   </canvas>
 
   <!-- Элементы для загрузочной полосы и предупреждений -->
@@ -93,7 +93,7 @@
     canvas.style.height = "100%";
   }
 
-  loadingBar.style.display = "block";
+  // loadingBar.style.display = "block";
   var script = document.createElement("script");
   script.src = loaderUrl;
   script.onload = () => {
