@@ -16,11 +16,12 @@
 <body>
 
 <div id="unity-container" class="unity-desktop">
+  <canvas id="unity-canvas" tabindex="-1">
+  </canvas>
   <a-scene embedded arjs>
 
 <!--  &lt;!&ndash; Канвас для отображения WebGL контента &ndash;&gt;-->
-  <canvas id="unity-canvas" tabindex="-1">
-  </canvas>
+
 
   <!-- Элементы для загрузочной полосы и предупреждений -->
 <!--    <div id="unity-loading-bar">-->
@@ -29,14 +30,14 @@
 <!--        <div id="unity-progress-bar-full"></div>-->
 <!--      </div>-->
 <!--    </div>-->
-  <div id="unity-warning"></div>
+<!--  <div id="unity-warning"></div>-->
 
   <!-- Футер с логотипом и кнопкой fullscreen -->
-  <div id="unity-footer">
-<!--    <div id="unity-webgl-logo"></div>-->
-    <div id="unity-fullscreen-button"></div>
-<!--    <div id="unity-build-title">AR</div>-->
-  </div>
+<!--  <div id="unity-footer">-->
+<!--&lt;!&ndash;    <div id="unity-webgl-logo"></div>&ndash;&gt;-->
+<!--    <div id="unity-fullscreen-button"></div>-->
+<!--&lt;!&ndash;    <div id="unity-build-title">AR</div>&ndash;&gt;-->
+<!--  </div>-->
 
   </a-scene>
 </div>
