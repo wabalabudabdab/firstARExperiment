@@ -16,18 +16,19 @@
 <body>
 
 <div id="unity-container" class="unity-desktop">
+
   <a-scene embedded arjs>
 
-  <!-- Канвас для отображения WebGL контента -->
+<!--  &lt;!&ndash; Канвас для отображения WebGL контента &ndash;&gt;-->
   <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
 
   <!-- Элементы для загрузочной полосы и предупреждений -->
-  <div id="unity-loading-bar">
-    <div id="unity-logo"></div>
-    <div id="unity-progress-bar-empty">
-      <div id="unity-progress-bar-full"></div>
-    </div>
-  </div>
+<!--  <div id="unity-loading-bar">-->
+<!--    <div id="unity-logo"></div>-->
+<!--    <div id="unity-progress-bar-empty">-->
+<!--      <div id="unity-progress-bar-full"></div>-->
+<!--    </div>-->
+<!--  </div>-->
   <div id="unity-warning"></div>
 
   <!-- Футер с логотипом и кнопкой fullscreen -->
@@ -89,8 +90,8 @@
     container.className = "unity-mobile";
     canvas.className = "unity-mobile";
   } else {
-    canvas.style.width = "960px";
-    canvas.style.height = "600px";
+    canvas.style.width = "100%";
+    canvas.style.height = "100%";
   }
 
   loadingBar.style.display = "block";
