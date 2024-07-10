@@ -18,13 +18,16 @@
 
 <div id="unity-container" class="unity-desktop">
 
-  <canvas id="unity-canvas" tabindex="-1">
-  </canvas>
-
   <a-scene embedded arjs>
+    <!-- Маркер для AR -->
+    <a-marker preset="hiro">
+      <!-- Канвас для отображения WebGL контента -->
+      <a-entity>
+        <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
+      </a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
   </a-scene>
-
-  <div id="unity-warning"></div>
 
 </div>
 
