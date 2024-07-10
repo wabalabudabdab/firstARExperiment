@@ -13,12 +13,13 @@
   </head>
   <body>
   <a-scene embedded arjs>
-
+    <a-marker preset="hiro">
+      <a-entity gltf-model="#model" scale="0.5 0.5 0.5"></a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
   <div id="unity-container" class="unity-desktop">
-        <a-marker preset="hiro">
-          <a-entity gltf-model="#model" scale="0.5 0.5 0.5"></a-entity>
-        </a-marker>
-        <a-entity camera></a-entity>
+
+
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
